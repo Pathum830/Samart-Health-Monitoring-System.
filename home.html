@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Health Monitor | Dashboard</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d5a4d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <h1><i class="fas fa-heartbeat"></i> Smart Health Monitor</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="welcome">
+      <h2>Welcome to Your Health Dashboard</h2>
+      <p>Track your daily health stats and stay on top of your goals.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <i class="fas fa-heart"></i>
+        <h3>Heart Rate</h3>
+        <p>72 bpm</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-tint"></i>
+        <h3>Water Intake</h3>
+        <p>1.5 L / 2.5 L</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-running"></i>
+        <h3>Activity</h3>
+        <p>4,200 steps</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-brain"></i>
+        <h3>Stress Level</h3>
+        <p>Normal</p>
+      </div>
+    </section>
+
+    <section class="bmi-section">
+      <h3>BMI Calculator</h3>
+      <div class="bmi-form">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <button id="calcBMI">Calculate</button>
+      </div>
+      <p id="bmiResult"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Smart Health Monitor | All rights reserved.</p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
